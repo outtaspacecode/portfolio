@@ -87,7 +87,7 @@ footer a, footer p {
     margin: auto 40px;
 }
 #footer-icons img {
-    margin: auto 5px;
+    padding: auto 5px;
 }
 footer p {
     margin-left: 35px;
