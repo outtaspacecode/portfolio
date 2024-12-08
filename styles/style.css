@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Markazi+Text:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Custom Highlight selection color */
+::selection {
+    color: #eff0f0;
+    background: #0F4745;
+}
+::-moz-selection {
+    color: #eff0f0;
+    background: #0F4745;
+}
+
+/* Basic page layout rules */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Markazi Text';
+}
+body {
+    margin: 0;
+    background-color: #eff0f0;
+}
+p, li {
+    font-size: 1.4em;
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Noto Sans';
+}
+
+/* Nav bar */
+nav a {
+    text-decoration: none;
+    color: #eff0f0;
+}
+#nav-links a:hover {
+    background-color: #235956;
+}
+#name-link {
+    padding: 20px;
+    font-family: 'Markazi Text';
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-left: 35px;
+}
+nav {
+    display: flex;
+    background-color: #0f4745;
+}
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: auto;
+}
+#nav-links a {
+    padding: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #0f4745;
+    display: flex;
+}
+footer img {
+    background-color: #eff0f0;
+    max-width: 30px;
+    border-radius: 5px;
+}
+footer a, footer p {
+    text-decoration: none;
+    color: #eff0f0;
+}
+#footer-links a:hover {
+    background-color: #235956;
+}
+#footer-links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+#footer-links a {
+    padding: 25px 30px;
+}
+#footer-icons {
+    margin: auto 40px;
+}
+#footer-icons img {
+    margin: auto 5px;
+}
+footer p {
+    margin-left: 35px;
+}
