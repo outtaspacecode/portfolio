@@ -10,6 +10,12 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--light);
+}
+
 .head {
     margin: 40px 0;
 }
