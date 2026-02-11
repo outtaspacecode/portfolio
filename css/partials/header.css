@@ -9,7 +9,8 @@ nav a {
     padding: 8px 20px;
     border-radius: 9999px;
     transition: background-color 1.0s ease, box-shadow 2.0s ease;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 nav a:hover {
