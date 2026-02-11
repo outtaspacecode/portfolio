@@ -1,3 +1,42 @@
 @import './partials/variables.css';
 @import './partials/default.css';
 @import './partials/header.css';
+
+.intro-container {
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-between;
+}
+
+.intro-container > img {
+    aspect-ratio: 1 / 1;
+    width: 500px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+    margin-left: 40px;
+}
+
+.name {
+    font-family: Merriweather, 'Times New Roman', Times, serif;
+    color: var(--accent);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    align-self: center;
+}
+
+.links a {
+    margin: 5px 0;
+}

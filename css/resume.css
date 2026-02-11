@@ -2,10 +2,6 @@
 @import './partials/default.css';
 @import './partials/header.css';
 
-* {
-    color: var(--light);
-}
-
 h1, h2 {
     text-transform: uppercase;
 }
@@ -58,4 +54,17 @@ h2 {
 
 .main > section {
     margin-bottom: 30px;
+}
+
+.contact > h3 {
+    margin-top: 14px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links > a:hover {
+    text-decoration: underline;
 }

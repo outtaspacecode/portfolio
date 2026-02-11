@@ -1,6 +1,12 @@
 * {
     margin: 0;
     font-family: 'Nunito sans', Arial, Helvetica, sans-serif;
+    color: var(--light);
+}
+
+::selection {
+    background-color: var(--accent);
+    color: var(--base);
 }
 
 body {
