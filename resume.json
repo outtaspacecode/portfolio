@@ -1,0 +1,35 @@
+{
+    "name": "Cole Beebe-Urbanawiz",
+    "title": "Software Engineer • Full Stack Web Developer",
+    "profile": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc. Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.",
+    "phone": "(208) 604-0269",
+    "email": "cole.beebe@protonmail.com",
+    "links": [
+        {
+            "name": "LinkedIn",
+            "dest": "https://www.linkedin.com/in/cole-beebe-urbanawiz-341887305/"
+        },
+        {
+            "name": "School GitHub",
+            "dest": "https://github.com/colebeebe?tab=repositories"
+        },
+        {
+            "name": "Personal GitHub",
+            "dest": "https://github.com/outtaspacecode?tab=repositories"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Work Experience",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc.Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.Cras ac vulputate ligula. Cras ultrices tristique elit sed eleifend. Mauris porttitor nec erat eu suscipit.Vestibulum dapibus, tellus quis consectetur posuere, nunc est mollis ante, non iaculis massa nunc in justo.Phasellus pharetra, justo sagittis sollicitudin ullamcorper, ipsum felis tempus arcu, eu tristique enim libero sed ligula."
+        },
+        {
+            "title": "Education",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc.Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.Cras ac vulputate ligula. Cras ultrices tristique elit sed eleifend. Mauris porttitor nec erat eu suscipit.Vestibulum dapibus, tellus quis consectetur posuere, nunc est mollis ante, non iaculis massa nunc in justo.Phasellus pharetra, justo sagittis sollicitudin ullamcorper, ipsum felis tempus arcu, eu tristique enim libero sed ligula."
+        },
+        {
+            "title": "Skills",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc.Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.Cras ac vulputate ligula. Cras ultrices tristique elit sed eleifend. Mauris porttitor nec erat eu suscipit.Vestibulum dapibus, tellus quis consectetur posuere, nunc est mollis ante, non iaculis massa nunc in justo.Phasellus pharetra, justo sagittis sollicitudin ullamcorper, ipsum felis tempus arcu, eu tristique enim libero sed ligula."
+        }
+    ]
+}
