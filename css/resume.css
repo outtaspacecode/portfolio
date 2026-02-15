@@ -12,6 +12,16 @@ hr {
     background-color: var(--light);
 }
 
+ul {
+    padding-left: 18px;
+}
+
+ul li::marker {
+    content: "+ ";
+    font-weight: 700;
+    color: var(--accent);
+}
+
 .head {
     margin: 40px 0;
 }
@@ -53,7 +63,7 @@ h2 {
 }
 
 .main > section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .contact > h3 {
@@ -68,3 +78,31 @@ h2 {
 .links > a:hover {
     text-decoration: underline;
 }
+
+.light-rule {
+    height: 0.5px;
+    /* background-color: var(--accent); */
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills > section {
+    width: 48%;
+}
+
+.skills h3 {
+    margin-top: 20px;
+}
+
+.skills hr.light-rule {
+    margin-bottom: 5px;
+}
+
+.skills ul {
+    columns: 3;
+}
+

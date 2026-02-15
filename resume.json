@@ -35,6 +35,7 @@
             "title": "<strong>Bachelor of Science in Software Engineering</strong> - Expected December 2026",
             "school": "Brigham Young University - Idaho",
             "location": "Rexburg, Idaho",
+            "coursework": "Machine Learning, Data Structures & Algorithms, Database Systems, Software Design & Architecture, Operating Systems",
             "projects": [
                 "Developed a custom Minecraft mod in Java, implementing object-oriented design principles and event-driven programming.",
                 "Built a mobile application using Android SDK, integrating UI components and backend logic.",
@@ -89,21 +90,33 @@
         "skills": {
             "languages": [
                 "C++",
-                "HTML / CSS / JavaScript",
+                "JavaScript",
                 "C#",
                 "Python",
                 "SQL",
                 "Erlang",
                 "Java"
             ],
-            "frameworks": [
+            "web": [
+                "HTML / CSS",
                 "Node.js / Vite",
+                "REST APIs"
+            ],
+            "systems": [
+                "Linux (Ubuntu)",
+                "Shell scripting",
+                "Docker"
+            ],
+            "frameworks": [
                 "OpenGL",
                 "Android SDK"
             ],
+            "tools": [
+                "Git CLI",
+                "Vim"
+            ],
             "other": [
-                "Circuit board soldering",
-                "Hardware troubleshooting"
+                "SolidWorks"
             ]
         }
     }

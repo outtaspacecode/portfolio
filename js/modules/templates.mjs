@@ -21,7 +21,7 @@ export function resumeTemplate(data) {
                         ${data.links.map(link => `<a href="${link.dest}" target="_blank">${link.name}</a>`).join('')}
                     </section>
                 </section>
-                <section>
+                <section class="additional-info">
                     <h3>Additional Information</h3>
                     <h4>Spoken Languages</h4>
                     <ul>
@@ -32,8 +32,8 @@ export function resumeTemplate(data) {
             <div class="divider"></div>
             <div class="main">
                 ${educationSectionTemplate(data.experience.education)}
-                ${workSectionTemplate(data.experience.work)}
                 ${skillSectionTemplate(data.experience.skills)}
+                ${workSectionTemplate(data.experience.work)}
             </div>
         </div>
     `;
@@ -41,11 +41,13 @@ export function resumeTemplate(data) {
 
 function educationSectionTemplate(data) {
     return `
-        <section>
-            <h2>Education</h2>
-            <hr />
+        <h2>Education</h2>
+        <hr />
+        <section class="education">
             <p>${data.title}</p>
             <p>${data.school} - ${data.location}</p>
+            <h4>Relevant Coursework</h4>
+            <p>${data.coursework}<p>
             <h4>Relevant Technical Projects</h4>
             <ul>
                 ${getListItems(data.projects)}
@@ -56,9 +58,9 @@ function educationSectionTemplate(data) {
 
 function workSectionTemplate(data) {
     return `
-        <section>
-            <h2>Work Experience</h2>
-            <hr />
+        <h2>Work Experience</h2>
+        <hr />
+        <section class="work">
             ${data.map(job => `
                 <h4>${job.title}</h4>
                 <h5>${job.business} - ${job.location}</h5>
@@ -73,21 +75,27 @@ function workSectionTemplate(data) {
 
 function skillSectionTemplate(data) {
     return `
-        <section>
-            <h2>Technical Skills</h2>
-            <hr />
-            <h4>Languages</h4>
-            <ul>
-                ${getListItems(data.languages)}
-            </ul>
-            <h4>Frameworks</h4>
-            <ul>
-                ${getListItems(data.frameworks)}
-            </ul>
+        <h2>Technical Skills</h2>
+        <hr />
+        <section class="skills">
+            ${Object.entries(data).map(([key, item]) => `
+                <section>
+                    <h3>${capitalize(key)}</h3>
+                    <hr class="light-rule" />
+                    <ul>
+                        ${getListItems(item)}
+                    </ul>
+                </section>
+            `).join('')}
         </section>
     `;
 }
 
 function getListItems(data) {
     return data.map(item => `<li>${item}</li>`).join('');
+}
+
+function capitalize(str) {
+    if (!str) return str;
+    return str[0].toUpperCase() + str.slice(1).toLowerCase();
 }
