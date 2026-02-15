@@ -4,6 +4,18 @@
     "profile": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc. Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.",
     "phone": "(208) 604-0269",
     "email": "cole.beebe@protonmail.com",
+    "additionalInfo": {
+        "languages": [
+            {
+                "name": "English",
+                "proficiency": "Native"
+            },
+            {
+                "name": "Spanish",
+                "proficiency": "Advanced"
+            }
+        ]
+    },
     "links": [
         {
             "name": "LinkedIn",
@@ -18,18 +30,81 @@
             "dest": "https://github.com/outtaspacecode?tab=repositories"
         }
     ],
-    "experience": [
-        {
-            "title": "Work Experience",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc.Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.Cras ac vulputate ligula. Cras ultrices tristique elit sed eleifend. Mauris porttitor nec erat eu suscipit.Vestibulum dapibus, tellus quis consectetur posuere, nunc est mollis ante, non iaculis massa nunc in justo.Phasellus pharetra, justo sagittis sollicitudin ullamcorper, ipsum felis tempus arcu, eu tristique enim libero sed ligula."
+    "experience": {
+        "education": {
+            "title": "<strong>Bachelor of Science in Software Engineering</strong> - Expected December 2026",
+            "school": "Brigham Young University - Idaho",
+            "location": "Rexburg, Idaho",
+            "projects": [
+                "Developed a custom Minecraft mod in Java, implementing object-oriented design principles and event-driven programming.",
+                "Built a mobile application using Android SDK, integrating UI components and backend logic.",
+                "Designed and implemented custom data structure libraries in C++ and C#, emphasizing performance and memory efficiency.",
+                "Architected and developed a Python-based video game, applying game logic, modular design, an ddebugging methodologies"
+            ]
         },
-        {
-            "title": "Education",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc.Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.Cras ac vulputate ligula. Cras ultrices tristique elit sed eleifend. Mauris porttitor nec erat eu suscipit.Vestibulum dapibus, tellus quis consectetur posuere, nunc est mollis ante, non iaculis massa nunc in justo.Phasellus pharetra, justo sagittis sollicitudin ullamcorper, ipsum felis tempus arcu, eu tristique enim libero sed ligula."
-        },
-        {
-            "title": "Skills",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet orci elit. Mauris quis aliquam nunc.Donec eu neque vel nunc molestie elementum. Integer lorem libero, congue id est vitae, efficitur feugiat lorem.Cras ac vulputate ligula. Cras ultrices tristique elit sed eleifend. Mauris porttitor nec erat eu suscipit.Vestibulum dapibus, tellus quis consectetur posuere, nunc est mollis ante, non iaculis massa nunc in justo.Phasellus pharetra, justo sagittis sollicitudin ullamcorper, ipsum felis tempus arcu, eu tristique enim libero sed ligula."
+        "work": [
+            {
+                "title": "Cabinet Maker and Installer",
+                "business": "Walker & Son's",
+                "location": "Rigby, Idaho",
+                "date": "October 2022 - August 2024",
+                "skills": [
+                    "Trained and mentored apprentices in installation techniques and quality control standards",
+                    "Collaborated with designers and architects to translate design plans into finished installations",
+                    "Managed on-site problem solving, ensuring projects were completed on time and to specification"
+                ]
+            },
+            {
+                "title": "Front End Supevisor",
+                "business": "Broulim's Fresh Foods",
+                "location": "Rigby, Idaho",
+                "date": "February 2013 - October 2022",
+                "skills": [
+                    "Supervised and trained members on operational procedures and customer service standards",
+                    "Resolved escalated customer issues with professionalism and efficiency",
+                    "Coordinated shift operations to maintain workflow during high-traffic periods"
+                ]
+            },
+            {
+                "title": "Sales Representative",
+                "business": "Aptive Environmental",
+                "location": "Hartford, Connecticut",
+                "date": "April 2018 - August 2018",
+                "skills": [
+                    "Met sales performance targets through effective customer communication and relationship building",
+                    "Accurately tracked sales transactions and expenses usign company reporting systems"
+                ]
+            },
+            {
+                "title": "Lifeguard",
+                "business": "Rexburg Rapids",
+                "location": "Rexburg, Idaho",
+                "date": "May 2013 - August 2013",
+                "skills": [
+                    "Maintained safety compliance and emergency readiness in a high-traffic aquatic facility",
+                    "Completed emergency response training and exectuted safety protocols under pressure"
+                ]
+            }
+        ],
+        "skills": {
+            "languages": [
+                "C++",
+                "HTML / CSS / JavaScript",
+                "C#",
+                "Python",
+                "SQL",
+                "Erlang",
+                "Java"
+            ],
+            "frameworks": [
+                "Node.js / Vite",
+                "OpenGL",
+                "Android SDK"
+            ],
+            "other": [
+                "Circuit board soldering",
+                "Hardware troubleshooting"
+            ]
         }
-    ]
+    }
 }
