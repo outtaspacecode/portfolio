@@ -20,7 +20,7 @@ export function resumeTemplate(data) {
 function sidebarTemplate(data) {
     return `
         <div class="sidebar">
-            <section>
+            <section class="profile">
                 <h2>Profile</h2>
                 <p>${data.profile}</p>
             </section>

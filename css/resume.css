@@ -13,10 +13,14 @@ hr {
 }
 
 ul {
-    padding-left: 18px;
+    padding-left: 5px;
 }
 
-ul li::marker {
+ul li {
+    list-style: none;
+}
+
+ul li::before {
     content: "+ ";
     font-weight: 700;
     color: var(--accent);
@@ -59,7 +63,7 @@ h2 {
 }
 
 .main {
-    flex: 5;
+    flex: 4;
 }
 
 .main > section {
