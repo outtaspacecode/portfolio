@@ -6,35 +6,41 @@ export function resumeTemplate(data) {
         </section>
         <hr />
         <div class="content">
-            <div class="sidebar">
-                <section>
-                    <h2>Profile</h2>
-                    <p>${data.profile}</p>
-                </section>
-                <section class="contact">
-                    <h3>Phone</h3>
-                    <p>${data.phone}</p>
-                    <h3>Email</h3>
-                    <p>${data.email}</p>
-                    <h3>Links</h3>
-                    <section class="links">
-                        ${data.links.map(link => `<a href="${link.dest}" target="_blank">${link.name}</a>`).join('')}
-                    </section>
-                </section>
-                <section class="additional-info">
-                    <h3>Additional Information</h3>
-                    <h4>Spoken Languages</h4>
-                    <ul>
-                        ${data.additionalInfo.languages.map(lang => `<li>${lang.name} (${lang.proficiency})</li>`).join('')}
-                    </ul>
-                </section>
-            </div>
+            ${sidebarTemplate(data)}
             <div class="divider"></div>
             <div class="main">
                 ${educationSectionTemplate(data.experience.education)}
                 ${skillSectionTemplate(data.experience.skills)}
                 ${workSectionTemplate(data.experience.work)}
             </div>
+        </div>
+    `;
+}
+
+function sidebarTemplate(data) {
+    return `
+        <div class="sidebar">
+            <section>
+                <h2>Profile</h2>
+                <p>${data.profile}</p>
+            </section>
+            <section class="contact">
+                <h3>Phone</h3>
+                <p>${data.phone}</p>
+                <h3>Email</h3>
+                <p>${data.email}</p>
+                <h3>Links</h3>
+                <section class="links">
+                    ${data.links.map(link => `<a href="${link.dest}" target="_blank">${link.name}</a>`).join('')}
+                </section>
+            </section>
+            <section class="additional-info">
+                <h3>Additional Information</h3>
+                <h4>Spoken Languages</h4>
+                <ul>
+                    ${data.additionalInfo.languages.map(lang => `<li>${lang.name} (${lang.proficiency})</li>`).join('')}
+                </ul>
+            </section>
         </div>
     `;
 }
