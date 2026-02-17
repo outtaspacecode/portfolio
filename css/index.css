@@ -40,3 +40,27 @@
 .links a {
     margin: 5px 0;
 }
+
+@media screen and (max-width: 700px) {
+    .intro-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .intro-container > img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+}

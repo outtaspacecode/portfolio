@@ -110,3 +110,23 @@ h2 {
     columns: 3;
 }
 
+@media screen and (max-width: 700px) {
+    main {
+        margin: 0 20px;
+    }
+    .content {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    .profile, .additional-info {
+        display: none;
+    }
+
+    .skills ul {
+        columns: 1;
+    }
+}

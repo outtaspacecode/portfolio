@@ -1,6 +1,7 @@
 nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 10px;
     margin: 20px;
 }
@@ -16,4 +17,16 @@ nav a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 8px lightgray;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: space-around;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+        padding: 8px 10px;
+    }
 }
