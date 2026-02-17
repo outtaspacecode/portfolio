@@ -79,7 +79,7 @@ h2 {
     flex-direction: column;
 }
 
-.links > a:hover {
+main a:hover {
     text-decoration: underline;
 }
 
