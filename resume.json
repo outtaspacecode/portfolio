@@ -91,6 +91,7 @@
         "skills": {
             "languages": [
                 "C++",
+                "TypeScript",
                 "JavaScript",
                 "C#",
                 "Python",
@@ -100,7 +101,7 @@
             ],
             "web": [
                 "HTML / CSS",
-                "Node.js / Vite",
+                "React / Vite",
                 "REST APIs"
             ],
             "systems": [
