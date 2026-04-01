@@ -38,10 +38,11 @@
             "location": "Rexburg, Idaho",
             "coursework": "Machine Learning, Data Structures & Algorithms, Database Systems, Software Design & Architecture, Operating Systems",
             "projects": [
+                "Trained machine learning models on data prediction, image recognition, and text generation.",
                 "Developed a <a href=\"https://github.com/outtaspacecode/HomesteadGame/\">voxel-based rendering engine</a> in C# using OpenGL, with a focus on scalable system architecture and memory optimization.",
                 "Built a mobile application using Android SDK, integrating UI components and backend logic.",
                 "Designed and implemented custom data structure libraries in C++ and C#, emphasizing performance and memory efficiency.",
-                "Architected and developed Python-based video games, applying game logic, modular design, an ddebugging methodologies"
+                "Architected and developed Python-based video games, applying game logic, modular design, and debugging methodologies"
             ]
         },
         "work": [
