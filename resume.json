@@ -42,7 +42,7 @@
                 "Developed a <a href=\"https://github.com/outtaspacecode/HomesteadGame/\">voxel-based rendering engine</a> in C# using OpenGL, with a focus on scalable system architecture and memory optimization.",
                 "Built a mobile application using Android SDK, integrating UI components and backend logic.",
                 "Designed and implemented custom data structure libraries in C++ and C#, emphasizing performance and memory efficiency.",
-                "Architected and developed Python-based video games, applying game logic, modular design, and debugging methodologies"
+                "Architected and developed Python-based video games, applying game logic, modular design, and debugging methodologies."
             ]
         },
         "work": [
@@ -54,11 +54,11 @@
                 "skills": [
                     "Trained and mentored apprentices in installation techniques and quality control standards",
                     "Collaborated with designers and architects to translate design plans into finished installations",
-                    "Managed on-site problem solving, ensuring projects were completed on time and to specification"
+                    "Managed on-site problem-solving, ensuring projects were completed on time and to specification"
                 ]
             },
             {
-                "title": "Front End Supevisor",
+                "title": "Front-End Supervisor",
                 "business": "Broulim's Fresh Foods",
                 "location": "Rigby, Idaho",
                 "date": "February 2013 - October 2022",
