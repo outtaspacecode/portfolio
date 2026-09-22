@@ -50,5 +50,16 @@ main {
     canvas {
       width: 95%;
     }
+
+    .controls {
+      .input-section {
+        margin: 10px auto;
+      }
+
+      .light-section,
+      .cube-section {
+        flex-direction: column;
+      }
+    }
   }
 }
