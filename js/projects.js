@@ -72,6 +72,8 @@ gl.bindVertexArray(null);
 
 const vertexSource = await loadShader('../shaders/vert.glsl');
 const fragmentSource = await loadShader('../shaders/frag.glsl');
+console.log(vertexSource);
+console.log(fragmentSource);
 
 const vertexShader = gl.createShader(gl.VERTEX_SHADER);
 gl.shaderSource(vertexShader, vertexSource);
