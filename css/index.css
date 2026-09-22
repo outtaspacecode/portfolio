@@ -3,64 +3,64 @@
 @import './partials/header.css';
 
 .intro-container {
-    display: flex;
-    margin-top: 120px;
-    justify-content: space-between;
-}
+  display: flex;
+  margin-top: 120px;
+  justify-content: space-between;
 
-.intro-container > img {
+  & > img {
     aspect-ratio: 1 / 1;
     width: 500px;
+  }
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .title {
-    border-left: 2px solid var(--accent);
-    padding-left: 20px;
-    margin-left: 40px;
+  border-left: 2px solid var(--accent);
+  padding-left: 20px;
+  margin-left: 40px;
 }
 
 .name {
-    font-family: Merriweather, 'Times New Roman', Times, serif;
-    color: var(--accent);
+  font-family: Merriweather, 'Times New Roman', Times, serif;
+  color: var(--accent);
 }
 
 .links {
-    display: flex;
-    flex-direction: column;
-    width: 220px;
-    align-self: center;
-}
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  align-self: center;
 
-.links a {
+  a {
     margin: 5px 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .intro-container {
-        flex-direction: column-reverse;
-        gap: 20px;
-    }
+  .intro-container {
+    flex-direction: column-reverse;
+    gap: 20px;
 
-    .intro-container > img {
-        width: 80%;
-        margin: 0 auto;
+    & > img {
+      width: 80%;
+      margin: 0 auto;
     }
+  }
 
-    h1 {
-        font-size: 1.4rem;
-    }
+  h1 {
+    font-size: 1.4rem;
+  }
 
-    h2 {
-        font-size: 1.2rem;
-    }
+  h2 {
+    font-size: 1.2rem;
+  }
 
-    .links {
-        margin-top: 20px;
-    }
+  .links {
+    margin-top: 20px;
+  }
 }

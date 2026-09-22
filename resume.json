@@ -40,25 +40,35 @@
     },
     "work": [
       {
+        "title": "Customer Service Agent",
+        "business": "Publix Supermarket",
+        "location": "Alpharetta, GA",
+        "date": "October 2024 - July 2025",
+        "skills": [
+          "Assisted customers, answered questions, and resolved concerns in a fast-paced retail environment",
+          "Collaborated with cashiers and front-end team members to maintain efficient checkout operations during peak business hours",
+          "Resolved customer issues by identifying appropriate solutions and clearly communicating store policies"
+        ]
+      },
+      {
         "title": "Cabinet Maker and Installer",
-        "business": "Walker & Son's",
-        "location": "Rigby, Idaho",
+        "business": "Walker & Son's Construction",
+        "location": "Rigby, ID",
         "date": "October 2022 - August 2024",
         "skills": [
-          "Trained and mentored apprentices in installation techniques and quality control standards",
-          "Collaborated with designers and architects to translate design plans into finished installations",
-          "Managed on-site problem-solving, ensuring projects were completed on time and to specification"
+          "Instructed and mentored apprentices in installation techniques and quality-control standards",
+          "Collaborated with designers and architects to translate design plans into completed installations",
+          "Solved on-site problems while ensuring projects were completed on time and according to specifications"
         ]
       },
       {
         "title": "Front-End Supervisor",
         "business": "Broulim's Fresh Foods",
-        "location": "Rigby, Idaho",
+        "location": "Rigby, ID",
         "date": "February 2013 - October 2022",
         "skills": [
           "Supervised and trained members on operational procedures and customer service standards",
-          "Resolved escalated customer issues with professionalism and efficiency",
-          "Coordinated shift operations to maintain workflow during high-traffic periods"
+          "Resolved escalated customer issues professionally and efficiently"
         ]
       },
       {
@@ -68,17 +78,7 @@
         "date": "April 2018 - August 2018",
         "skills": [
           "Met sales performance targets through effective customer communication and relationship building",
-          "Accurately tracked sales transactions and expenses using company reporting systems"
-        ]
-      },
-      {
-        "title": "Lifeguard",
-        "business": "Rexburg Rapids",
-        "location": "Rexburg, Idaho",
-        "date": "May 2013 - August 2013",
-        "skills": [
-          "Maintained safety compliance and emergency readiness in a high-traffic aquatic facility",
-          "Completed emergency response training and executed safety protocols under pressure"
+          "Maintained accurate records of sales transactions and expenses using company reporting systems"
         ]
       }
     ],

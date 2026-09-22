@@ -1,8 +1,8 @@
 :root {
-    --base: #34353A;
-    --accent: #f0bf6c;
-    --light: #d4cbbe;
+  --base: #34353a;
+  --accent: #f0bf6c;
+  --light: #d4cbbe;
 
-    --confirm: #bfb226;
-    --deny: #f2876c;
+  --confirm: #bfb226;
+  --deny: #f2876c;
 }
