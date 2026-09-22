@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The official portfolio website for Cole Beebe-Urbanawiz"
+    />
+    <meta name="author" content="Cole Beebe-Urbanawiz" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cole Beebe-Urbanawiz | Projects</title>
+    <link rel="stylesheet" href="css/projects.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "gl-matrix": "https://cdn.jsdelivr.net/npm/gl-matrix@3.4.3/+esm"
+        }
+      }
+    </script>
+    <script type="module" src="js/projects.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="./">Home</a>
+      <a href="resume.html">Resumé</a>
+      <a href="projects.html">Projects</a>
+      <!-- <a href="#">About Me</a> -->
+    </nav>
+    <main>
+      <h1>Current Studies</h1>
+      <p>
+        Recently, I’ve had the opportunity to dedicate more time to studying
+        graphics pipelines and real-time rendering. One of the many applications
+        of these concepts is WebGL, which enables browsers to render interactive
+        3D graphics directly on the web. As a simple example, take this cube.
+        The model, transformations, and lighting I've developed from scratch:
+      </p>
+      <canvas id="webgl-canvas" width="800" height="600"></canvas>
+      <div class="controls">
+        <div class="light-section">
+          <div class="input-section">
+            <label for="light-color">Light Color</label>
+            <input type="color" id="light-color" value="#ffffff" />
+          </div>
+          <div class="input-section">
+            <label for="intensity">Light Intensity</label>
+            <input type="range" id="intensity" min="0" max="100" value="50" />
+          </div>
+        </div>
+        <div class="input-section">
+          <lable for="cube-color">Cube Color</lable>
+          <input type="color" id="cube-color" value="#f0bf6c" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

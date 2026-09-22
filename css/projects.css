@@ -1,0 +1,53 @@
+@import './partials/variables.css';
+@import './partials/default.css';
+@import './partials/header.css';
+
+main {
+  padding: 0 20px;
+
+  p {
+    text-align: justify;
+  }
+
+  canvas {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .controls {
+    box-shadow: 0 0 5px var(--light);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+
+    .input-section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      input {
+        margin: 0 auto;
+        accent-color: var(--accent);
+      }
+    }
+
+    .light-section {
+      display: flex;
+
+      div {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    canvas {
+      width: 95%;
+    }
+  }
+}
