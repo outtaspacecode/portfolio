@@ -70,8 +70,8 @@ gl.enableVertexAttribArray(1);
 gl.bindBuffer(gl.ARRAY_BUFFER, null);
 gl.bindVertexArray(null);
 
-const vertexSource = await loadShader('../shaders/vert.glsl');
-const fragmentSource = await loadShader('../shaders/frag.glsl');
+const vertexSource = await loadShader('shaders/vert.glsl');
+const fragmentSource = await loadShader('shaders/frag.glsl');
 console.log(vertexSource);
 console.log(fragmentSource);
 
