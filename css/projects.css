@@ -20,7 +20,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     padding: 20px;
 
     .input-section {
@@ -34,7 +34,8 @@ main {
       }
     }
 
-    .light-section {
+    .light-section,
+    .cube-section {
       display: flex;
 
       div {

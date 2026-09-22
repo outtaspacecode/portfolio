@@ -43,22 +43,40 @@
         The model, transformations, and lighting I've developed from scratch:
       </p>
       <canvas id="webgl-canvas" width="800" height="600"></canvas>
-      <!-- <div class="controls">
+      <div class="controls">
         <div class="light-section">
           <div class="input-section">
             <label for="light-color">Light Color</label>
             <input type="color" id="light-color" value="#ffffff" />
           </div>
           <div class="input-section">
-            <label for="intensity">Light Intensity</label>
-            <input type="range" id="intensity" min="0" max="100" value="50" />
+            <label for="light-intensity">Light Intensity</label>
+            <input
+              type="range"
+              id="light-intensity"
+              min="0"
+              max="100"
+              value="50"
+            />
           </div>
         </div>
-        <div class="input-section">
-          <lable for="cube-color">Cube Color</lable>
-          <input type="color" id="cube-color" value="#f0bf6c" />
+        <div class="cube-section">
+          <div class="input-section">
+            <label for="cube-color">Cube Color</label>
+            <input type="color" id="cube-color" value="#f0bf6c" />
+          </div>
+          <div class="input-section">
+            <label for="cube-shininess">Cube Shininess</label>
+            <input
+              type="range"
+              id="cube-shininess"
+              min="1"
+              max="128"
+              value="32"
+            />
+          </div>
         </div>
-      </div> -->
+      </div>
     </main>
   </body>
 </html>

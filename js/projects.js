@@ -1,5 +1,10 @@
 import { vec3, mat4 } from 'gl-matrix';
 
+const lightColorEl = document.getElementById('light-color');
+const lightIntensityEl = document.getElementById('light-intensity');
+const cubeColorEl = document.getElementById('cube-color');
+const cubeShininessEl = document.getElementById('cube-shininess');
+
 const canvas = document.getElementById('webgl-canvas');
 const gl = canvas.getContext('webgl2');
 
@@ -97,17 +102,13 @@ mat4.perspective(projection, Math.PI / 4, canvas.width / canvas.height, 0.1, 100
 
 const lightPos = vec3.fromValues(3.0, 1.0, 1.0);
 vec3.transformMat4(lightPos, lightPos, view);
-const lightColor = [0.5, 0.5, 0.5];
 
 gl.useProgram(program);
 gl.uniformMatrix4fv(gl.getUniformLocation(program, 'view'), false, view);
 gl.uniformMatrix4fv(gl.getUniformLocation(program, 'projection'), false, projection);
 gl.uniform3fv(gl.getUniformLocation(program, 'light.position'), lightPos);
-gl.uniform3fv(gl.getUniformLocation(program, 'light.ambient'), lightColor);
-gl.uniform3fv(gl.getUniformLocation(program, 'light.diffuse'), lightColor);
-gl.uniform3fv(gl.getUniformLocation(program, 'light.specular'), lightColor);
-gl.uniform3fv(gl.getUniformLocation(program, 'material.color'), [0.9412, 0.7490, 0.4235]);
-gl.uniform1f(gl.getUniformLocation(program, 'material.shininess'), 32.0);
+
+console.log(lightColorEl.value);
 
 requestAnimationFrame(render);
 function render(time) {
@@ -127,6 +128,23 @@ function render(time) {
   gl.useProgram(program);
   gl.uniformMatrix4fv(gl.getUniformLocation(program, 'model'), false, model);
   gl.uniformMatrix4fv(gl.getUniformLocation(program, 'normalView'), true, normalView);
+
+  const intensity = lightIntensityEl.value / 100.0;
+  const lr = parseInt(lightColorEl.value.slice(1, 3), 16) / 255;
+  const lg = parseInt(lightColorEl.value.slice(3, 5), 16) / 255;
+  const lb = parseInt(lightColorEl.value.slice(5, 7), 16) / 255;
+  const lightColor = [lr * intensity, lg * intensity, lb * intensity];
+
+  const cr = parseInt(cubeColorEl.value.slice(1, 3), 16) / 255;
+  const cg = parseInt(cubeColorEl.value.slice(3, 5), 16) / 255;
+  const cb = parseInt(cubeColorEl.value.slice(5, 7), 16) / 255;
+  const cubeColor = [cr, cg, cb];
+
+  gl.uniform3fv(gl.getUniformLocation(program, 'light.ambient'), lightColor);
+  gl.uniform3fv(gl.getUniformLocation(program, 'light.diffuse'), lightColor);
+  gl.uniform3fv(gl.getUniformLocation(program, 'light.specular'), lightColor);
+  gl.uniform3fv(gl.getUniformLocation(program, 'material.color'), cubeColor);
+  gl.uniform1f(gl.getUniformLocation(program, 'material.shininess'), cubeShininessEl.value);
 
   gl.bindVertexArray(vao);
   gl.drawArrays(gl.TRIANGLES, 0, 36);
